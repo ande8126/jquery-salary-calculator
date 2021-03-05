@@ -20,4 +20,4 @@ Salary calculator -- weekend challange for my full-stack class at Prime
 
 [x] Create a delete button that removes an employee from the DOM. For Base mode, it does not need to remove that Employee's salary from the reported total.
 
-[ ] Style to fit assignment Wireframe
+[x] Style to fit assignment Wireframe
