@@ -15,14 +15,19 @@ table {
     padding: 1.5px;
     margin: 20px 0;
     text-align: center;
-    max-width: 75%;
+    width: 75%;
 }
+
 
 thead {
     background-color: #46f18e;
     color: #ffffff;
     font-size: 17px;
     font-weight: 600;
+}
+
+tbody {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 table th,
