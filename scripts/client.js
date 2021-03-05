@@ -36,7 +36,7 @@ function calculateMonthlyCosts() {
     //loop thru salaries
     for (i=0; i<employees.length; i++ ){
         //get all salaries
-        monthlies += employees[i].salary;
+        monthlies += Number(employees[i].salary);
     }//end for
     //calculate monthlies
     monthlies /= 12;
