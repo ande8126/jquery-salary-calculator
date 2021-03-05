@@ -46,7 +46,13 @@ function calculateMonthlyCosts() {
     //empty
     el.empty();
     //append to DOM
+    //if monthlies go above 20000, add red background
+    if ( monthlies > 20000 ) {
+        el.append( `<span id="overBudget">${monthlies}</span>`)
+    }
+    else{
     el.append( monthlies );
+    }
 }//end calculateMonthlyCosts
 
 function deleteEmployee(){
@@ -57,6 +63,8 @@ function showEmployees(){
     //target output element
     //create new variable
     let el = $( '#salariesOut' );
+    //empty
+    el.empty();
     //loop thru employees
     for ( i=0; i<employees.length; i++ ) {
         //append to DOM

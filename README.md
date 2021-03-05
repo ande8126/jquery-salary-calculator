@@ -12,12 +12,12 @@ Salary calculator -- weekend challange for my full-stack class at Prime
 
 [x] store the information 
 
-[ ] calculate monthly costs 
-
 [x] append information to the DOM and clear the input fields. 
 
-[ ] Using the stored information, calculate monthly costs and append this to the to DOM. 
+[x] Using the stored information, calculate monthly costs and append this to the to DOM. 
 
-[ ] If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
+[x] If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
 
 [x] Create a delete button that removes an employee from the DOM. For Base mode, it does not need to remove that Employee's salary from the reported total.
+
+[ ] Style to fit assignment Wireframe
