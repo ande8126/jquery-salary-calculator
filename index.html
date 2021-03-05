@@ -14,16 +14,27 @@
         <h1>Salary calculator</h1>
     </div>
     <p>Input info:</p>
-    <input type="text" placeholder="first name" id="firstNameIn">
-    <input type="text" placeholder="last name" id="lastNameIn">
-    <input type="number" placeholder="ID number" id="idNumberIn">
-    <input type="text" placeholder="job title" id="titleOut">
-    <input type="text" placeholder="salary" id="salaryOut">
-    <button id="submitButton">Submit</button>
-    <button id="deleteButton">Delete</button>
-
     <div class="main">
-
+        <div class="input">
+            <input type="text" placeholder="first name" id="firstNameIn">
+            <input type="text" placeholder="last name" id="lastNameIn">
+            <input type="number" placeholder="ID number" id="idNumberIn">
+            <input type="text" placeholder="job title" id="titleOut">
+            <input type="number" placeholder="salary" id="salaryOut">
+            <button id="addEmployeeButton">Submit</button>
+        </div>
+        <div class="output">
+            <table id="salariesOut">
+                <tr>
+                    <td>First</td>
+                    <td>Last</td>
+                    <td>ID</td>
+                    <td>Title</td>
+                    <td>Salary</td>
+                    <td>Action</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
