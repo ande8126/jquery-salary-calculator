@@ -31,7 +31,7 @@ function addEmployee(){
 }//end addEmployee
 
 function calculateMonthlyCosts() {
-    //get info
+    //set variable for monthly costs
     let monthlies = 0;
     //loop thru salaries
     for (i=0; i<employees.length; i++ ){
