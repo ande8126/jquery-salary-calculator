@@ -21,6 +21,7 @@ function addEmployee(){
     employees.push(newEmployee);
     //output to the dom
     showEmployees();
+    calculateMonthlyCosts();
     //clear the text input
     $('#firstNameIn' ).val( '' );
     $('#lastNameIn' ).val( '' );
@@ -28,6 +29,25 @@ function addEmployee(){
     $('#titleOut' ).val( '' );
     $('#salaryOut' ).val( '' ); 
 }//end addEmployee
+
+function calculateMonthlyCosts() {
+    //get info
+    let monthlies = 0;
+    //loop thru salaries
+    for (i=0; i<employees.length; i++ ){
+        //get all salaries
+        monthlies += employees[i].salary;
+    }//end for
+    //calculate monthlies
+    monthlies /= 12;
+    //display to DOM
+    //assign to variable
+    let el = $( '#costsOut' );
+    //empty
+    el.empty();
+    //append to DOM
+    el.append( monthlies );
+}//end calculateMonthlyCosts
 
 function deleteEmployee(){
     $(this).parent().parent().remove();
