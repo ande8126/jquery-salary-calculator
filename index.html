@@ -13,17 +13,19 @@
     <div class="header">
         <h1>Salary calculator</h1>
     </div>
-    <p>Input info:</p>
+    
     <div class="main">
+        <p id="addEmployeeText">Add employee</p>
         <div class="input">
             <input type="text" placeholder="first name" id="firstNameIn">
             <input type="text" placeholder="last name" id="lastNameIn">
             <input type="number" placeholder="ID number" id="idNumberIn">
             <input type="text" placeholder="job title" id="titleOut">
             <input type="number" placeholder="salary" id="salaryOut">
-            <button id="addEmployeeButton">Submit</button>
         </div>
+        <button id="addEmployeeButton">Submit</button>
         <div class="output">
+            <p id="tableText">Employees</p>
             <table id="salariesTable">
                 <thead>
                     <td>First</td>
@@ -39,7 +41,7 @@
             </table>
         </div>
         <div class="costs">
-            <p>Total monthly: $<span id="costsOut">0</span></p>
+            <p id="monthlyBudget">Total monthly: $<span id="costsOut">0</span></p>
         </div>
     </div>
 </body>

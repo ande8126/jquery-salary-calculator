@@ -3,7 +3,8 @@ employees = [];
 
 function onReady(){
     $( '#addEmployeeButton' ).on('click', addEmployee );
-    $( '#salariesOut' ).on('click', '#deleteEmployeeButton', deleteEmployee )
+    $( '#salariesOut' ).on('click', '#deleteEmployeeButton', deleteEmployee );
+    $( '#firstNameIn' ).focus();
 }//end onReady
 
 

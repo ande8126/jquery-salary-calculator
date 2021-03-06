@@ -4,23 +4,56 @@ body {
     margin: auto;
 }
 
+.header {
+    margin: auto;
+    width: 80%;
+}
+
 h1 {
     text-align: center;
-    background-color: #9191a1;
+    background-color: #cfcdcc;
+    color: #36454f;
+    padding: 30px 0;
+}
+
+.main {
+    margin: auto;
+    width: 80%;
+}
+
+#addEmployeeText {
+    font-size: 25px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+input{
+    padding: 10px
+}
+
+#addEmployeeButton {
+    padding: 10px;
+}
+
+#tableText {
+    font-size: 25px;
 }
 
 table {
     border-collapse: collapse;
     font-size: 16px;
     padding: 1.5px;
-    margin: 20px 0;
     text-align: center;
-    width: 75%;
+    width: 100%;
 }
 
 
 thead {
-    background-color: #46f18e;
+    background-color: #36454f;
     color: #ffffff;
     font-size: 17px;
     font-weight: 600;
@@ -41,13 +74,17 @@ tbody tr {
 }
 
 tbody tr:nth-of-type(even) {
-    background-color: #f1f1f1;
+    background-color: #f1f9ff;
 }
 
 tbody tr:last-of-type {
-    border-bottom: 2px solid #46f18e;
+    border-bottom: 2px solid #36454f;
 }
 
+#monthlyBudget{
+    font-size: 25px;
+    text-align: right;
+}
 
 #overBudget{
     background-color: red;
