@@ -1,5 +1,5 @@
 $( document ).ready( onReady );
-employees = [];
+let employees = [];
 
 function onReady(){
     $( '#addEmployeeButton' ).on('click', addEmployee );
@@ -8,15 +8,14 @@ function onReady(){
 }//end onReady
 
 
-
 function addEmployee(){
     console.log('in addEmployee');
     let newEmployee = {
         firstName: $('#firstNameIn' ).val(),
         lastName: $('#lastNameIn' ).val(),
         idNumber: $('#idNumberIn' ).val(),
-        title: $('#titleOut' ).val(),
-        salary: $('#salaryOut' ).val()
+        title: $( '#titleIn' ).val(),
+        salary: $( '#salaryIn' ).val()
     }//end newEmployee
     //push to employees array
     employees.push(newEmployee);
@@ -27,8 +26,8 @@ function addEmployee(){
     $('#firstNameIn' ).val( '' );
     $('#lastNameIn' ).val( '' );
     $('#idNumberIn' ).val( '' );
-    $('#titleOut' ).val( '' );
-    $('#salaryOut' ).val( '' ); 
+    $('#titleIn' ).val( '' );
+    $('#salaryIn' ).val( '' ); 
 }//end addEmployee
 
 function calculateMonthlyCosts() {
@@ -58,6 +57,8 @@ function calculateMonthlyCosts() {
 
 function deleteEmployee(){
     $(this).parent().parent().remove();
+    //account for salary of deleted employee
+
 }//end deleteEmployee
 
 function showEmployees(){
@@ -78,5 +79,4 @@ function showEmployees(){
         <td><button id="deleteEmployeeButton">Delete</button></td>
     </tr>`)
     }//end for loop
-    //append to DOM
 }//end showEmployees
