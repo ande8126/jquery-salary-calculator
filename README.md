@@ -21,3 +21,7 @@ Salary calculator -- weekend challange for my full-stack class at Prime
 [x] Create a delete button that removes an employee from the DOM. For Base mode, it does not need to remove that Employee's salary from the reported total.
 
 [x] Style to fit assignment Wireframe
+
+STRETCH
+
+[ ] Add function/conditional that deletes the salary of a deleted employee from the monthly budget
