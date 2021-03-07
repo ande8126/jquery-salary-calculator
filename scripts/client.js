@@ -48,10 +48,10 @@ function calculateMonthlyCosts() {
     //append to DOM
     //if monthlies go above 20000, add red background
     if ( monthlies > 20000 ) {
-        el.append( `<span id="overBudget">${monthlies}</span>`)
+        el.append( `<span id="overBudget">${monthlies.toFixed(2)}</span>`)
     }
     else{
-    el.append( monthlies );
+    el.append( monthlies.toFixed(2) );
     }
 }//end calculateMonthlyCosts
 
